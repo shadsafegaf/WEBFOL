@@ -75,3 +75,25 @@ if (form) {
     }
   });
 }
+
+/* ── Dark Mode ── */
+function toggleDark() {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('darkMode', isDark);
+    document.getElementById('icon-moon').style.display = isDark ? 'none' : 'block';
+    document.getElementById('icon-sun').style.display  = isDark ? 'block' : 'none';
+  }
+  
+  // Remember preference across pages
+  (function () {
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark');
+      document.addEventListener('DOMContentLoaded', function () {
+        const moon = document.getElementById('icon-moon');
+        const sun  = document.getElementById('icon-sun');
+        if (moon) moon.style.display = 'none';
+        if (sun)  sun.style.display  = 'block';
+      });
+    }
+  })();

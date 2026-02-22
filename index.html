@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adrian Tagle — Frontend Developer</title>
+<link rel="icon" type="image/png" href="images/logo.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Adrian Tagle Logo">
+      </a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active"><span class="nav-num">01</span>Home</a></li>
+    <li><a href="about.html"><span class="nav-num">02</span>About</a></li>
+    <li><a href="projects.html"><span class="nav-num">03</span>Projects</a></li>
+    <li><a href="contact.html"><span class="nav-num">04</span>Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-tag">Frontend Developer · Available Now</div>
+      <div class="hero-name-block">
+        <h1>Hi, I'm<br><em>Adrian Tagle</em></h1>
+      </div>
+      <div class="hero-bio-block">
+        <p class="hero-bio">
+            I build responsive web interfaces with clean frontend code and intuitive UI/UX design — continuously learning and refining modern digital experiences.
+        </p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-solid">Hire Me</a>
+          <a href="projects.html" class="btn btn-ghost">View Work</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-visual">
+        <div class="geo-ring"></div>
+        <div class="geo-ring"></div>
+        <div class="geo-ring"></div>
+        <div class="portrait-area">
+            <div class="portrait-box">
+                <img src="images/formal.png" alt="Adrian Tagle" class="portrait-img">
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-strip">
+    <div class="strip-header">
+      <h2>FEATURED WORK</h2>
+      <a href="projects.html">All Projects →</a>
+    </div>
+    <div class="projects-row">
+        <div class="proj-card reveal">
+          <span class="proj-num">PROJECT / 01</span>
+          <div class="proj-thumb">
+            <img src="images/chesslibrary.jpg" alt="Chess Library" style="width:100%;height:100%;object-fit:cover;object-position:center top;"/>
+          </div>
+          <span class="proj-tag">CHESS LIBRARY</span>
+          <h3 class="proj-title">Web Application</h3>
+          <p class="proj-desc">A web-based Chess Library Management System that streamlines book cataloging, borrowing, returning, and penalty tracking. The system features a responsive React.js front-end, Node.js/Express.js back-end, and a secure MySQL database.</p>
+          <div class="proj-stack">
+            <span>PHP</span><span>HTML</span><span>CSS</span><span>SQL</span><span>Node.js</span>
+          </div>
+          <a href="projects.html" class="proj-link">View Project</a>
+        </div>
+      
+        <div class="proj-card reveal">
+          <span class="proj-num">PROJECT / 02</span>
+          <div class="proj-thumb">
+            <img src="images/paramalan.webp" alt="Paramalan.com" style="width:100%;height:100%;object-fit:cover;object-position:center top;"/>
+          </div>
+          <span class="proj-tag">Paramalan.com</span>
+          <h3 class="proj-title">WEBSITE</h3>
+          <p class="proj-desc">A gown rental website for Paramalan.com — Best Gown Rental Shop in Pampanga where elegance meets tradition. Designed and developed using WordPress with a custom Figma layout.</p>
+          <div class="proj-stack">
+            <span>HTML</span><span>CSS</span><span>FIGMA</span><span>WORDPRESS</span>
+          </div>
+          <a href="projects.html" class="proj-link">View Project</a>
+        </div>
+      </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-col">
+    <h4>Quick Links</h4>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-col footer-contact">
+    <h4>Contact</h4>
+    <p>Porac, Pampanga Sta Cruz</p>
+    <p>09619837027</p>
+    <p>adriantroytagle8@gmail.com</p>
+  </div>
+  <div class="footer-col">
+    <h4>Follow me</h4>
+    <div class="footer-social">
+        <a href="https://github.com/shadsafegaf" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </a>
+          <a href="https://app-na2.hubspot.com/academy-profile/member/82779168" aria-label="HubSpot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path d="M22.21 12.04a5.93 5.93 0 0 0-4.5-5.75V4.56a2.1 2.1 0 1 0-2.1 0v1.73a5.94 5.94 0 0 0-2.93 1.52L8.4 5.65a2.42 2.42 0 1 0-.87 1.51l4.16 2.1a5.9 5.9 0 0 0-.56 2.48 5.94 5.94 0 0 0 .88 3.13l-1.73 1.73a2.1 2.1 0 1 0 1.06 1.06l1.8-1.8a5.93 5.93 0 1 0 9.07-3.82zm-5.94 7.5a3.57 3.57 0 1 1 0-7.14 3.57 3.57 0 0 1 0 7.14z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/adrian-tagle-5093a529a/" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">© 2025 Adrian Tagle. All rights reserved.</div>
+
+<script src="main.js"></script>
+</body>
+</html>
